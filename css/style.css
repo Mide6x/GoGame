@@ -18,7 +18,9 @@ body{
 img{
 	max-width: 100%;
 }
-
+html, body {
+	scroll-behavior:smooth;
+}
 .sub-text{
 	font-size: 35px;
 	font-family: "Nunito", sans-serif;
@@ -234,14 +236,12 @@ h2{
 	z-index: 1;
   }
   
-  html,body{
-	scroll-behavior: smooth !important;
-}
-  
   li {
 	float: right;
   }
-  
+  html, body {
+	scroll-behavior:smooth;
+}
   li a {
 	display: block;
 	color: #fa8151;
@@ -264,8 +264,5 @@ h2{
   }
   .sub-text{
 font-size: 25px;
-  }
-  .parallax {
-    background-attachment: inherit;
   }
 }
