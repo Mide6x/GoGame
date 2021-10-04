@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+
+*,*::before,*::after {
+  box-sizing: border-box; 
+}
+body{
+	margin: 0;
+	font-family: "Nunito", sans-serif;
+	background:#fff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #ffffff;
+}
+html,body{
+	scroll-behavior: smooth;
+}
+img{
+	max-width: 100%;
+}
+
+.sub-text{
+	font-size: 35px;
+	font-family: "Nunito", sans-serif;
+	text-shadow: 2px 2px 0px #fd5d01 ;
+}
+h1{
+font-family: 'Almarai', sans-serif;
+text-shadow: 2px 2px 0px #ffffff ;
+color: #fd5d01 ;
+font-size: 25px;
+
+}
+h2{
+	margin-bottom: 30px;
+}
+.home-img {
+	width: 18vh;
+	margin-bottom: 7vh;
+}
+/*header*/
+#navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+  }
+  ul {
+	list-style-type: none;
+	margin: -10px;
+	padding: 10px;
+	overflow: hidden;
+	height: 60px;
+	background: linear-gradient(to right, #ff833b 5%, #ffff 100%) !important;
+	color: #fd5d01;
+  }
+  
+  li {
+	float: right;
+  }
+  
+  li a {
+	display: block;
+	color: #fa8151;
+	text-align: center;
+	padding: 14px 16px;
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+  }
+  li a:hover {
+	background-color: #ff8d6000;
+	color: #ff5e00;
+	text-decoration: none;
+  }
+  
+  a {
+	color: inherit;
+  }
+.block-row{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 30px 10px;
+	justify-content: center;
+	background-position: center center;
+	/*background-size: cover;*/
+}
+.nav_icon{
+	color: #fff;
+	font-size: 35px;
+	vertical-align: middle;
+	line-height: 1
+}
+
+.main_menu{
+	position: fixed;
+	right: 0;
+	top:-10px;
+	padding-top: 82px;
+	z-index: 10;
+	overflow: hidden;
+	height: 0;
+	width: 250px;
+	transition: all 0.3s ease-in-out;
+}
+.main_menu.active{
+	height: 100vh;
+}
+.main_menu {
+	margin:0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	z-index: 1;
+}
+.main_menu {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 25px;
+	border-bottom: 1px solid #fd85565e;
+	color: #000;
+	background: #fff;
+}
+
+.menu_bg{
+	background: #fff;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	top:0;
+	left: 50%;
+	margin-left: -5px;
+	transition: all 0.3s ease-in-out;
+}
+.main_menu.active .menu_bg{
+	transform: scale(120);
+}
+
+/*banner*/
+.banner{
+	text-align: center;
+  color: #fff;
+  font-size: 60px;
+
+}
+.banner h1{
+	font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*about*/
+.about_box{
+	background:#fff;
+	border-radius: 15px;
+	padding: 50px;
+}
+
+/*features*/
+.features{
+	background-blend-mode: darken;
+	
+}
+.featureservices h2{
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+}
+.feature_box{
+	min-height: calc(100% - 40px);
+	margin-bottom: 40px;
+	padding: 20px;
+	background:#fff;
+	border-radius: 10px;
+}
+.feature_box figure{
+	width: 40%;
+	float: left;
+	margin:0 20px 0 0;
+}
+.feature_box figure img{
+	border-radius: 5px;
+}
+.feature_box .description{
+	overflow: hidden;
+	color: #000;
+}
+.feature_box .description p{
+	margin-bottom: 0;
+}
+
+
+/*footer*/
+.footer{
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	background:#fd5d01;
+}
+/*This Media Query use for Mobile View*/
+@media screen and (max-width: 767px){
+	.banner{ padding-top: 80px; }
+  .banner h1{ font-size: 70px; }	
+  .about_box{
+  	padding: 25px;
+  }
+  .service_box figure{ float: none; width: auto; margin:0 0 20px; }
+  #navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+  }
+  
+  
+  li {
+	float: right;
+  }
+  
+  li a {
+	display: block;
+	color: #fa8151;
+	text-align: center;
+	padding: 14px 16px;
+	font-family: "Nunito", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+  }
+  li a:hover {
+	background-color: #ff8d6000;
+	color: #ff4800;
+	text-decoration: none;
+  }
+  
+  a {
+	color: inherit;
+	text-decoration: none;
+  }
+  .sub-text{
+font-size: 25px;
+  }
+}
