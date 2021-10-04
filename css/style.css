@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 *,*::before,*::after {
   box-sizing: border-box; 
@@ -15,9 +15,6 @@ body{
 	line-height: 1.6;
 	color: #ffffff;
 }
-html,body{
-	scroll-behavior: smooth;
-}
 img{
 	max-width: 100%;
 }
@@ -28,7 +25,7 @@ img{
 	text-shadow: 2px 2px 0px #fd5d01 ;
 }
 h1{
-font-family: 'Almarai', sans-serif;
+	font-family: 'Concert One', cursive;
 text-shadow: 2px 2px 0px #ffffff ;
 color: #fd5d01 ;
 font-size: 25px;
@@ -36,10 +33,6 @@ font-size: 25px;
 }
 h2{
 	margin-bottom: 30px;
-}
-.home-img {
-	width: 18vh;
-	margin-bottom: 7vh;
 }
 /*header*/
 #navbar {
@@ -192,7 +185,33 @@ h2{
 .feature_box .description p{
 	margin-bottom: 0;
 }
-
+/*cokkie consent*/
+.cookie-banner {
+	position: fixed;
+	bottom: 40px;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	padding: 5px 14px;
+	display: flex;
+	align-items: center;
+	color: #fc6f1e;
+	justify-content: space-between;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 1px #fd5d018f;
+  }
+  .close {
+	height: 20px;
+	background-color: #ffffff;
+	border: none;
+	color: #fd5d01;
+	border-radius: 2px;
+	cursor: pointer;
+  }
+  .cookiepolicy {
+	  font-weight: 1000;
+  }
 
 /*footer*/
 .footer{
@@ -215,6 +234,9 @@ h2{
 	z-index: 1;
   }
   
+  html,body{
+	scroll-behavior: smooth !important;
+}
   
   li {
 	float: right;
@@ -242,5 +264,8 @@ h2{
   }
   .sub-text{
 font-size: 25px;
+  }
+  .parallax {
+    background-attachment: inherit;
   }
 }
