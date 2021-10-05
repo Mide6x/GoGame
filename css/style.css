@@ -171,6 +171,11 @@ h2{
 	padding: 20px;
 	background:#fff;
 	border-radius: 10px;
+	opacity: 0;
+	transition: opacity 250ms ease-in;
+}
+.feature_box.appear {
+opacity: 1;
 }
 .feature_box figure{
 	width: 40%;
